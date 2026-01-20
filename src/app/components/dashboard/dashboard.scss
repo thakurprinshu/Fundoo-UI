@@ -1,0 +1,79 @@
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #fff;
+  border-bottom: 1px solid #dadce0;
+  padding: 0 16px;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.search {
+  width: 500px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* ===== SIDENAV CONTAINER ===== */
+.container {
+  margin-top: 64px;                 /* below navbar */
+  height: calc(100vh - 64px);       /* full remaining height */
+}
+
+
+/* ===== SIDENAV ===== */
+.sidenav {
+  width: 250px;
+  height: 100%;                     /* 🔥 THIS IS THE KEY */
+  background: #ffffff;
+  overflow-y: auto;                 /* scroll if needed */
+}
+
+/* ===== MENU ITEMS ===== */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+}
+
+.menu-item:hover {
+  background: #f1f3f4;
+}
+
+.menu-item.active {
+  background: #feefc3;
+}
+
+.menu-item mat-icon {
+  color: #5f6368;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  height: 100%;
+  padding: 24px;
+  background: #f8f9fa;
+}
